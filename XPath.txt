@@ -1,0 +1,49 @@
+<input type="email" class="whsOnd zHQkBf" jsname="YPqjbf" autocomplete="username" spellcheck="false" tabindex="0" 
+aria-label="Email or phone" name="identifier" value="" autocapitalize="none" 
+id="identifierId" dir="ltr" data-initial-dir="ltr" data-initial-value="" badinput="false">
+
+//input[@id = 'identifierId']
+
+<div class="VfPpkd-RLmnJb"></div>
+
+//div[@class= 'VfPpkd-RLmnJb']
+
+<span jsname="V67aGc" class="VfPpkd-vQzf8d">Next</span>
+
+//span[@class = 'VfPpkd-vQzf8d']
+
+<input type="submit" class="button" value="Submit">
+
+--qa.way2automation
+
+$x("(//input[@class='button' and @type='submit'])[1]")
+
+contains, starts-with, ends-with()
+
+Parent & child relationship
+preceding siblings and following siblings
+	Gmail example:
+	
+	going to parent:
+	$x("//input[@id = 'identifierId' and @type='email']/..")
+	("//input[@id = 'identifierId' and @type='email']/parent::div")
+	(By.xpath("(//div[@class='aCsJod oJeWuf']/div[1]/div[1])[1]"));
+
+		("(//div//div[@class = 'kadhka']/div[@class='aCsJod oJeWuf']/div[1]/div[1])[1]"));
+
+		("//div[@class= 'aCsJod oJeWuf']/div[1]/div[3]/preceding-sibling::div[1]")
+
+		("//div[@class= 'aCsJod oJeWuf']/div[1]/div[3]/preceding-sibling::div[1]")
+		
+		$x("//div[@class= 'aCsJod oJeWuf']/div[1]/div[@class='Xb9hP']/following-sibling::div[1]")
+
+		$x("//div[@class= 'aCsJod oJeWuf']/div[1]/div[@class='Xb9hP']/following-sibling::div[1]")
+
+		("//*[contains(text(), "SignIn")]")
+
+		("//*[contains(text=  "SignIn")]")
+
+
+Absolute XPath:
+
+	$x("//html/body/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form/span/section/div/div/div[1]/div[1]/div[1]/div[1]/div[1]/input[@id='identifierId']")

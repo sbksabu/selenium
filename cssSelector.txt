@@ -1,0 +1,11 @@
+$$("input[id='identifierId']")
+
+$$("input[id='identifierId'][type='email']")
+
+$$("input[id^='identifier']") -- starts-with
+$$("input[id$='identifier']") -- ends-with
+
+$$("#identifierId") -- id
+
+.classname - class
+
